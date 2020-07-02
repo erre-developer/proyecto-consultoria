@@ -18,20 +18,18 @@
                 <a class="nav-link text-white" href="#servicio">Servicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">Ubicación</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                    Certificaciones
                 </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item disable"  href="#">Certificaciones</a>
+                <a class="dropdown-item disable"  href="#">Certificaciones</a>
             </div>
             </li>
             

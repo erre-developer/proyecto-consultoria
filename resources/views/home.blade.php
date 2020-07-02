@@ -31,7 +31,7 @@
             </div>
             <div class="card-deck">
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card">
+                    <div class="card my-2">
                         <div class="container card-body">
                             <img class="card-img-top" src="/img/plan.svg" alt="Card image cap">
                             <div class="card-body">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card">
+                    <div class="card my-2">
                         <div class="container card-body">
                             <img class="card-img-top" src="/img/gestion.svg" alt="Card image cap">
                             <div class="card-body">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card">
+                    <div class="card my-2">
                         <div class="container card-body">
                             <img class="card-img-top" src="/img/gestion.svg" alt="Card image cap">
                             <div class="card-body">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="card">
+                    <div class="card my-2">
                         <div class="container card-body">
                             <img class="card-img-top" src="/img/plan.svg" alt="Card image cap">
                             <div class="card-body">
@@ -78,6 +78,68 @@
             
         </div>
          
+    </div>
+    <div class="idsection" id="contacto">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 miestilo text-primary pb-4">Contacto</h1>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <form class="bg-light py-2 px-3" method="POST" action="">
+                    @csrf
+
+                    <div class="form-group">
+                        <h5 class="text-success" for="name">Nombre</h5>
+                        <input class="form-control bg-light shadow-sm @error('name') is-invalid @else  border-0 @enderror" type="text" id="name" name="name" placeholder="Nombre..." value="{{ old('name') }}">
+                        @error('name')
+                            <span class="invalid-feefback">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    
+                    <div class="form-group">
+                        <h5 class="text-success" for="email">Email</h5>
+                        <input class="form-control bg-light shadow-sm @error('email') is-invalid @else  border-0 @enderror" type="email" id="email" name="email" placeholder="Email..." value="{{ old('email') }}">
+                        @error('email')
+                            <span class="invalid-feefback">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <h5 class="text-success" for="subject">asunto</h5>
+                        <input class="form-control bg-light shadow-sm @error('subject') is-invalid @else  border-0 @enderror" type="text" id="subject" name="subject" placeholder="Asunto..." value="{{ old('subject') }}">
+                        @error('subject')
+                            <span class="invalid-feefback">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <h5 class="text-success" for="content">Contenido</h5>
+                        <textarea class="form-control bg-light shadow-sm @error('content') is-invalid @else  border-0 @enderror"  rows="5" name="content" placeholder="contenido ....">{{ old('content') }}</textarea>
+                        @error('content')
+                            <span class="invalid-feefback">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <br>
+                    <button class="btn btn-outline-success btn-lg btn-block">Enviar</button>
+                </form>
+
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+
+            </div>
+        </div>
     </div>
 
 @endsection
