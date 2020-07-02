@@ -15,6 +15,10 @@ class CreateRedesSocialesTable extends Migration
     {
         Schema::create('redes_sociales', function (Blueprint $table) {
             $table->id();
+            $table->string('href');
+            $table->string('src');
+            $table->string('alt');
+            $table->boolean('estado');
             $table->timestamps();
         });
     }

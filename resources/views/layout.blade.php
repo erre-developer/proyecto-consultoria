@@ -35,6 +35,7 @@
 <body>
 
     <div id="app" class="d-flex flex-column h-screen justify-content-between">
+
         <header>
             @include('partials.nav')
         </header>
@@ -47,18 +48,11 @@
             <div class="container-fluid  pb-3">
                 <div class="row align-items-center">
                     <div class="text-center col-12 col-sm-6 col-md-6">
-                        <a target="_blank" href="https://www.facebook.com">
-                            <img class="imgfooter" src="/img/redes-sociales/facebook.svg" alt="imagen logo facebook" width="40" height="40">
+                        @foreach( $objeto as $item)
+                        <a target="_blank" href="{{ $item->href }}">
+                            <img class="imgfooter" src="{{ $item->src }}" alt="{{ $item->alt }}" width="40" height="40">
                         </a>
-                        <a target="_blank" href="https://www.youtube.com">
-                            <img class="imgfooter" src="/img/redes-sociales/youtube.svg" alt="imagen logo youtube" width="40" height="40">
-                        </a>
-                        <a target="_blank" href="https://www.twitter.com">
-                            <img class="imgfooter" src="/img/redes-sociales/twitter.svg" alt="imagen logo twitter" width="40" height="40">
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com">
-                            <img class="imgfooter" src="/img/redes-sociales/linkedin.svg" alt="imagen logo linkedin" width="40" height="40">
-                        </a>
+                        @endforeach
                     </div>
                     <div class="text-center miestilofooter col-12 col-sm-6 col-md-6 d-flex flex-column align-items-end ">
                         <a class="text-success" href="#home">Nosotros</a>
@@ -71,7 +65,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="text-center col-12 col-sm-6 col-md-6">
-                        <h6>Consultoria <span class="text-primary">PMO</span> | CopyRight@2020</h6>
+                        <h6>Consultoria <span class="text-primary">PMO</span> | Copyright © 2020</h6>
                     </div>
                     <div class="text-center col-12 col-sm-6 col-md-6">
                         <h6 class="text-success">Desing By erre-developer</h6>
@@ -81,10 +75,4 @@
                     </div>
                 </div>
             </div>
-        </footer>
-    
-    </div>
-    
-</body>
-</html>
-
+<body>

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class RedesSociales extends Model
+class RedSocial extends Model
 {
     //
 }
