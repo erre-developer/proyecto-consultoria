@@ -7,6 +7,7 @@ use App\RedSocial;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Return_;
 
 class CertificacionController extends Controller
 {
@@ -46,10 +47,11 @@ class CertificacionController extends Controller
      * @param  \App\Certificacion  $redSocial
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Certificacion $certificacion)
     {
-
-        return Certificacion::find($id);
+        return view('certificaciones.show',[
+            'certificacion' => $certificacion
+        ]);
        
     }
 
