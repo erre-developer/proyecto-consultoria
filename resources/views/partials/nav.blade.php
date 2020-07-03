@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark text-light shadow py-4 fixed-top">
 
     <div class="container">
-        <a class="navbar-brand text-white" href="#home">
+        <a class="navbar-brand text-white" href="home">
             <h3>Consultoria <span class="text-primary">PMO</span></h3>
         </a>
 
@@ -12,25 +12,19 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link text-white" href="#home">Nosotros</a>
+                <a class="nav-link text-white" href="home#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#servicio">Servicio</a>
+                <a class="nav-link text-white" href="home#servicio">Servicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#contacto">Contacto</a>
+                <a class="nav-link text-white" href="home#contacto">Contacto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Ubicación</a>
+                <a class="nav-link text-white" href="home#contacto">Ubicación</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Certificaciones
-                </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item disable"  href="#">Certificaciones</a>
-                <a class="dropdown-item disable"  href="#">Certificaciones</a>
-            </div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{{ route('certificacion.index') }}">Certificaciones</a>
             </li>
             
         </ul>
