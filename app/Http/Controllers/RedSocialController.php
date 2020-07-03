@@ -15,6 +15,7 @@ class RedSocialController extends Controller
         //$redes = RedSocial::table('redes_sociales')->all();
 
         $results = DB::select('select * from redes_sociales where estado=1', array(1));
+        $nosotros = DB::select('select * from nosotros');
         // return view('home',compact('results'));
 
         //ROUTE MODEL BINDING
@@ -22,7 +23,9 @@ class RedSocialController extends Controller
             'objeto' => $results
 
         ],[
-            'redessociales' => $results
+            'nosotros' => $nosotros
         ]);
+
+        // return $nosotros;
     }
 }

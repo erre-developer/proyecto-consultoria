@@ -7,11 +7,16 @@
 
 </div>
     <div class="container">
+        
         <div class="row">
             <div class="col-12 col-lg-6 col-md-6">
+                
                 <h1 class="display-4 miestilo text-primary ">Quienes Somos</h1>
+
                 <p class="text-justify">Nuestra misión es aportar valor en el desarrollo de las empresas , de cualquier tamaño, mediante el uso de las tecnologías de la información en todos los procesos productivos. Contribuyendo a la generación de riquezas de la empresa y al crecimiento de sus colaboradores y el país.</p>
                 <p class="text-justify">Esta página es un canal de comunicación con todos aquellos interesados en conocer los servicios que ofrecemos en la gestión Integral de Proyectos, la capacitación, Entrenamiento y Gestión de Procesos También un canal de información de temas y noticias relevantes relacionados con la gestión de proyectos. Por último un espacio para el intercambio de ideas y/o debates en torno a las TIC.</p>
+               
+                
                 <a class="btn btn-lg btn-block btn-outline-primary my-4" href="">Contactanos</a>
             </div>
             <div class="col-12 col-lg-6">
