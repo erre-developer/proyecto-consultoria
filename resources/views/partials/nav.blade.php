@@ -28,18 +28,25 @@
             </li>
             
         </ul>
-        @guest
-                <form class="form-inline my-2 my-lg-0">
-                    @csrf
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-                </form>
+            @guest
+                <a class="nav-link btn btn-outline-success my-2 my-sm-0" href="{{ route('login') }}">
+                    Login 
+                </a>
+
                 @else 
                 <form class="form-inline my-2 my-lg-0">
                     @csrf
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Salir</button>
+                    <a class="nav-link btn btn-outline-success my-2 my-sm-0" href="#" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        Cerrar Sesion
+                    </a>
                 </form>
             @endguest
         
         </div>
     </div>
   </nav>
+  
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>

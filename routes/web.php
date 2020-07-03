@@ -6,9 +6,15 @@ use App\Http\Controllers\HomeController;
 
 
 
+Route::get('/', 'RedSocialController@index');
 Route::get('/home', 'RedSocialController@index')->name('home');
 
 Route::resource('certificacion', 'CertificacionController');
 
-//Auth::routes();
+Route::get('admin', function () {
+    return view('admin.dashboard');
+});
+
+
+Auth::routes();
 
