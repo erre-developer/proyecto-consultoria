@@ -43,7 +43,7 @@ class RedSocialController extends Controller
         //
     }
 
-    /**
+    /**web
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -52,6 +52,7 @@ class RedSocialController extends Controller
     public function store(Request $request)
     {
         //
+
     }
 
     /**
