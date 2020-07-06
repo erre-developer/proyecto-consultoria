@@ -16,7 +16,7 @@
             <br>
 
             <label for="imagen">Subir Imagen</label>
-            <input type="file" name="imagen">
+            <input type="file" name="pdf">
             <br><br>
             
                 

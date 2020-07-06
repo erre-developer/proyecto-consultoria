@@ -6,8 +6,10 @@ use App\Http\Controllers\HomeController;
 
 
 
-Route::get('/', 'RedSocialController@index');
 Route::post('/rutaprueba', 'PruebaController@store')->name('rutaprueba');
+//Route::path('/rutaprueba{prueba}', 'PruebaController@update')->name('rutaprueba.update');
+
+Route::get('/', 'RedSocialController@index');
 Route::get('/home', 'RedSocialController@index')->name('home');
 
 Route::resource('certificacion', 'CertificacionController');

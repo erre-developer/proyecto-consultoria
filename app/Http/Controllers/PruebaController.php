@@ -25,12 +25,33 @@ class PruebaController extends Controller
     public function store(Request $request)
     {
         //si el archivo request es un file
-        if ($request->hasFile('imagen')) {
-            $file = $request->file('imagen');
+        // if ($request->hasFile('imagen')) {
+        //     $file = $request->file('imagen');
+        //     $name = time().$file->getClientOriginalName();
+        //     $file->move(public_path().'/images/',$name);
+            
+        // }
+
+        
+
+        if ($request->hasFile('')) {
+            $file = $request->file('pdf');
             $name = time().$file->getClientOriginalName();
-            $file->move(public_path().'/img/',$name);
-            return $name;
+            $file->move(public_path().'/pdf/',$name);
+            
         }
+
+        // return $name;
+
+        //  $file = $request->file('imagen');
+        // $name = time().$file->getClientOriginalName();
+
+        //  $image_path = public_path(). '\images\1593839833logowhatsapp.jpg';
+        // unlink($image_path);
+
+        return 'Se ha subido el archivo: '.$name;
+
+        // return 'Imgen eliminada'.$image_path. '   Imagen subida '. $name;
     }
 
     /**

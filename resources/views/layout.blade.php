@@ -55,7 +55,7 @@
                         @endforeach
                     </div>
                     <div class="text-center miestilofooter col-12 col-sm-6 col-md-6 d-flex flex-column align-items-end ">
-                        <a class="text-success" href="#home">Nosotros</a>
+                        <a class="text-success" href="#nosotros">Nosotros</a>
                         <a class="text-success" href="#contacto">Contacto</a>
                         <a class="text-success" href="#servicio">Servicio</a>
                         <a class="text-success" href="#ubicacion">Ubicacion</a>
@@ -75,4 +75,5 @@
                     </div>
                 </div>
             </div>
+        </footer>
 <body>

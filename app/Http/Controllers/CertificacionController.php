@@ -44,6 +44,7 @@ class CertificacionController extends Controller
     public function store() 
     {
         
+        
     }
 
      /**
@@ -54,8 +55,16 @@ class CertificacionController extends Controller
      */
     public function show(Certificacion $certificacion)
     {
-        return view('certificaciones.show',[
-            'certificacion' => $certificacion
+        $results = RedSocial::all();
+
+        // return view('certificaciones.show',[
+        //     'certificacion' => $certificacion
+        // ],[
+        //     'objeto' => $results
+        // ]);
+
+        return view('certificaciones.show', [
+            'objeto' => $results
         ]);
        
     }
