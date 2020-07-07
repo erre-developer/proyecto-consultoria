@@ -9,7 +9,7 @@
     <div class="container">
         
         <div class="row">
-            <div class="col-12 col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-12">
                 
                 <h1 class="display-4 miestilo text-primary ">Quienes Somos</h1>
 
@@ -19,7 +19,7 @@
                 
                 <a class="btn btn-lg btn-block btn-outline-primary my-4" href="">Contactanos</a>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-lg-6 col-md-12">
                 <img class="img-fluid my-4" src="/img/home1.svg" alt="Home ">
             </div>
         </div>

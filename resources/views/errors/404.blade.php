@@ -13,6 +13,10 @@
     <div class="container min-vh-100">
 
         <div class="row">
+
+            <div class="col-12 text-center">
+                <h3 for="">Pagina no encontrada</h3>
+            </div>
             <div class="py-4 text-center style col-xl-12">
                 <img class="mx-auto img-fluid" src="img/404.svg" alt="">
             </div>
@@ -23,7 +27,7 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-light shadow py-3 mt-4 ">
+    <footer class="bg-dark text-light shadow py-3 mt-4 align-items-center ">
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center col-12 col-sm-6 col-md-6">
