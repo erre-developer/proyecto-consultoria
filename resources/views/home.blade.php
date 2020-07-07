@@ -141,9 +141,24 @@
                 </form>
 
             </div>
+
             <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div id="map" class="col-12">
+                        <h1>mapa</h1>
+                    </div>
+
+                    <div class="col-12">
+                       
+                        <h5 class="text-success">Providencia, 727 - Santiago - Chile</h5>
+                        <h5 class="text-success">Llamar 09 6120 4054</h5>
+                        <h5 class="text-success">contacto@consultoriapmo.com</h5>
+                       
+                    </div>
+                </div>
 
             </div>
+
         </div>
     </div>
 
